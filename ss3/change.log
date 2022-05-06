@@ -1,0 +1,74 @@
+THỰC HÀNH 
+BEGIN 
+     INPUT C
+	 F = (9*C)/5 + 32
+	 DISPLAY F
+END 
+-----------------------------------------
+ THỰC HÀNH 2
+BEGIN
+  N là số được sinh số ngẫu nhiên trong khoản 0-9 
+  nhập vào M 
+  IF N=M
+    DISPLAY " Dự Đoán Đúng"
+  ELSE 
+    DISPLAY "Dự Đoán Sai"
+END
+--------------------
+Bai tap 1
+BEGIN
+    INPUT MATH , Physics , chemistry
+	Average = ( MATH + Physics + chemistry ) / 3
+	DISPLAY Average
+END
+---------------------------
+bao tap 2
+BEGIN
+    INPUT a
+	b = a * 23000
+	DISPLAY b
+END	
+-----------------------------
+bai tap 3 
+BEGIN
+    INPUT a ,b , c
+	IF a>b and a>c 
+	DISPLAY "a la gia tri lon nhat "
+    IF a<b and a>c
+	DISPLAY "b la gia tri lon nhat"
+	IF a>b and a<c
+	DISPLAY "c la gia tri lon nhat"
+end
+-------------------------------
+bài tập 4
+BEGIN
+    INPUT n 
+	      a1, a2, a3... an 
+		  MAX = a1 , i=2
+    While  i<= n
+	DO 
+	If ai> max
+	   max = ai
+	   END if
+	   i = i + 1
+	   END LOOP
+	   DISPLAY max
+END
+	
+	
+Bài Tập 5
+BEGIN 
+     INPUT N <= 100
+	 IF N => 75
+	 DISPLAY "Loai A"
+	 ELSE IF 60<= N  
+	 DISPLAY "Loai B"
+	 ELSE IF 45<= N  
+	 DISPLAY "Loai c"
+	 ELSE IF 35<= N 
+	 DISPLAY "Loai D"
+	 ELSE IF N < 35
+	 DISPLAY "Loai E"
+END
+	 
+		  
