@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1
+    // let a= parseInt(prompt("number1"))
+    // let b= parseInt(prompt("number2"))
+    // if (a % b == 0){
+    //     alert("true")
+    // }else
+    //     alert("false")
+
+    //Bài 2
+    // let age= parseInt(prompt("Nhập tuổi"))
+    // if (age >= 15){
+    //     alert("Đủ điều kiện vào lớp 10")
+    // }else
+    //     alert("Không đủ điều kiện vào lớp 10")
+
+    //Bài 3
+    // let number= parseInt(prompt("Nhập số"))
+    // if (number > 0){
+    //     alert("Nguyên dương")
+    // }else if (number == 0){
+    //     alert("0")
+    // }else
+    //     alert("Nguyên âm")
+
+    //Bài 4
+    //  let a= parseInt(prompt("Số thứ nhất"))
+    //  let b= parseInt(prompt("Số thứ hai"))
+    //  let c= parseInt(prompt("Số thứ ba"))
+    // let max=a
+    // if (max<b){
+    //     max = b
+    // }
+    // if (max<c){
+    //     max=c
+    // }
+    // document.write("Số lớn nhất " + max)
+
+    //Bài 5
+    // let a= parseInt(prompt("Điểm bài kiểm tra"))
+    // let b= parseInt(prompt("Điểm thi giữa kỳ"))
+    // let c= parseInt(prompt("Điểm thi cuối kỳ"))
+    // let sum = a + (b * 2) + (c * 3)
+    //     let tb= sum / 6
+    // if (tb >= '9'){
+    //     alert("Xuất xắc")
+    // }else if (tb >= '8'){
+    //     alert("Giỏi")
+    // }else if (tb >= '6.5'){
+    //     alert('Khá')
+    // }else if (tb >= '5'){
+    //     alert('Trung bình')
+    // }else
+    //     alert('Yếu')
+
+    //Bài 6
+    // let luong= parseInt(prompt("nhập lương"))
+    // let phantramdoanhthu= prompt("phần trăm doanh thu")
+    // if (phantramdoanhthu>100){
+    //     luong += 50;
+    // } else if (phantramdoanhthu>75){
+    //     luong += 25;
+    // }
+    // alert('lương:' + luong + '$');
+
+    //Bài 7
+    // Phí thuê bao bắt buộc là 25 nghìn.
+    // 600 đồng cho mỗi gọi của 50 phút đầu tiên.
+    // 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    // 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
+
+    let bb= 25000
+    let phut= parseFloat(prompt("nhập số phut"))
+    let tiencuoc = 0
+    if (phut <= 50){
+        tiencuoc = bb + (600 * phut)
+    }else if (phut <= 200){
+        tiencuoc = bb + (600 * 50) + (400 * (phut - 50))
+    }else{
+        tiencuoc = bb + (600 * 50) + (400 * (phut - 50)) + (200 * (phut - 200))
+    }
+    alert(tiencuoc + " VNĐ")
+</script>
+</body>
+</html>
+</body>
+</html>
