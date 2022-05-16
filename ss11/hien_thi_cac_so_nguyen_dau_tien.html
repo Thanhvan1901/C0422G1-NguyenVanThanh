@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = 0;
+    let value = 2;
+
+    while (number!=20)
+    {
+        let result = true;
+
+        // kiem tra co phai so nguyen to hay ko?
+        let test = value - 1;
+        for(test;test>1;test--)
+        {
+            if(value % test == 0) {
+                result = false;
+            }
+        }
+
+        if(result == true)
+        {
+            document.write(value + ",<br>");
+            number++;
+        }
+
+        value ++;
+
+    }
+
+</script>
+</html>
+</body>
+</html>

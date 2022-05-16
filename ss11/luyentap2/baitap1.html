@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapso = prompt('nhap so')
+    let first=0;
+    let second=1;
+    let number;
+    for (i=0;i<=nhapso;i++){
+        number=first+second
+        first=second
+        second=number
+        document.write(number + '<br>')
+    }
+</script>
+</body>
+</html>

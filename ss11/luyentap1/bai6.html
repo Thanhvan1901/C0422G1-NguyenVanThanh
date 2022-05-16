@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0, total =0
+    let number =""
+    for (let i=1; ; i++){
+        if(i%7==0){
+            number += i+" "
+            console.log(number)
+            total += i
+            count++
+            if(count==30) break
+        }
+    }
+    document.write(number+"<br>")
+    document.write("Tổng Là : "+total)
+</script>
+</body>
+</html>
