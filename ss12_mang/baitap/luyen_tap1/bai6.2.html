@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập Chuỗi Vào Mảng") ;
+    let arr = str.split('') ;
+    let seach = prompt("Kí Tự cần Tìm trong mảng") ;
+    for(let i=0 ; i < arr.length;i++){
+        if(arr[i]==seach){
+            document.write(seach + " is in the array "+ '<br>') ;
+            break ;
+        }
+        else {
+            document.write(seach + " is not in the array " + '<br>') ;
+            break ;
+        }
+    }
+</script>
+</body>
+</html>

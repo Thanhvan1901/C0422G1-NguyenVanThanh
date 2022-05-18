@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt('Số Lượng Phần Tử Cần Nhập Vào Mảng') ;
+    let arr = []
+    let x = 0 ;
+    for( let i= 0 ; i < num ; i++){
+        arr[i] = prompt("Nhập Số Vào Mảng");
+    }document.write('arr = ['+arr+']' + '<br>') ;
+    for(let j = 0 ; j < arr.length ; j++){
+        if (arr[j] < 0 ){
+            document.write('số nguyên âm là :' + arr[j] + '<br>') ;
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập Chuỗi') ;
+    let arr = str.split('') ;
+    let newarr = [] ;
+    for(let i=0 ; i<arr.length;i++){
+        if(arr[i] == arr[i].toUpperCase()){
+            newarr.push(arr[i].toLowerCase());
+        } else if(arr[i] == arr[i].toLowerCase()){
+            newarr.push(arr[i].toUpperCase()) ;
+        }else {
+            newarr.push(arr[i]);
+        }
+    } newarr = newarr.join('') ;
+    alert(newarr)
+
+</script>
+</body>
+</html>

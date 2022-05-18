@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt('Nhập Số lượng phần tủ trong mảng')) ;
+    let arr = [] ;
+    let i ;
+    let sum = 0 ;
+    for (i=0 ; i < num ; i++){
+        arr[i] = parseInt(prompt('nhập giá trị phận tử trong mảng'));
+        sum += arr[i]
+    }document.write('arr = ['+arr+']' + '<br>') ;
+
+    document.write("trung bình các số trong mảng là : " + sum/arr.length + '<br>');
+    let j = 0 ;
+    let max = 0 ;
+    for ( ; j< arr.length ;j++){
+        if (max< arr[j]){
+            max = arr[j] ;
+        }
+
+    }document.write(max + ' là số lớn nhất');
+
+</script>
+</body>
+</html>

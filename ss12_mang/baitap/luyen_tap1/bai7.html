@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập Chuỗi Vào Mảng") ;
+    let arr = str.split('') ;
+    let seach = prompt("Kí Tự cần Tìm trong mảng") ;
+    let arr2 = seach.split('') ;
+    for(let i = 0 ; i < arr.length ; i++) {
+        if (arr[i]==arr2){
+            for(let j = i ; j<arr.length ;j++){
+                arr[j] = arr[j-1]
+                arr[arr.length-1]=0 ;
+                Document.write(arr[j])
+            }
+        }
+        }
+
+</script>
+</body>
+</html>
