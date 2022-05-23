@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số thứ nhất :')) ;
+    let b = parseInt(prompt('Nhập số thứ hai :')) ;
+    let c = parseInt(prompt('Nhập số thứ ba :')) ;
+    let min = a ;
+    function checkNumber(a , b , c) {
+        if(min > b && b < c){
+            min = b ;
+        }else if(min > c && c < b ){
+            min = c
+        }document.write('số nhỏ nhất là :' + min) ;
+    }checkNumber(a,b,c)
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let check = prompt('Nhập Tên Ngôi Sao Cần Tìm : ')
+    let name = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'] ;
+    let start = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major' , 'Leo'] ;
+    let count = 0 ;
+
+    function checkStart() {
+        for(let i = 0 ; i < name.length ; i++) {
+           if (check === name[i]){
+               document.write(start[i])
+               count++
+               break;
+
+           }
+            }if (count === 0){
+            document.write('không tìm thấy')
+        }
+        }
+        checkStart()
+    //         if(value == name[i]){
+    //             index++;
+    //         }for(let j = 0 ; j< start.length ; j++) {
+    //             if (index == j){
+    //                 result = start[j] ;
+    //             }
+    //         }
+    //     }document.write(value + ' thuộc chòm sao ' + result ) ;
+    // }
+</script>
+</body>
+</html>
