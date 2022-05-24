@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let a = parseInt(prompt('Nhập chiều dài của hình chữ nhật :')) ;
+    let b = parseInt(prompt('Nhập chiều cao của hình chữ nhật : ')) ;
+    class Rectangle {
+        height ;
+        weight ;
+        constructor(height, weight ) {
+            this.height = height ;
+            this.weight = weight ;
+        }
+        getHeight(){
+            return this.height ;
+        }
+        getWeight(){
+            return this.weight ;
+        }
+        getArea(){
+            return this.weight * this.height ;
+        }
+        getPerimeter(){
+            return 2 * ( this.height + this.weight) ;
+        }
+    }
+    let myRectangle = new Rectangle(a,b) ;
+    let height = myRectangle.getHeight() ;
+    let weight = myRectangle.getWeight() ;
+    let area = myRectangle.getArea() ;
+    let perimeter = myRectangle.getPerimeter();
+    document.write('Diện tích của hình chữ nhật là :' + area + '<br>') ;
+    document.write('Chu vi của hình chữ nhật là : ' + perimeter + '<br>')
+
+</script>
+</body>
+</html>
